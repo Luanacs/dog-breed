@@ -2,3 +2,11 @@
     <label for="email">Email</label>
     <input [(ngModel)]="register.email" class="form-control" type="text" name="email" id="email" placeholder="Seu email">
 </div>
+<div class="d-flex justify-content-center pt-3">
+    <button
+      (click)="registrar()"
+      type="submit"
+      class="button-entrar font-button"
+    >
+      Registrar
+    </button>
