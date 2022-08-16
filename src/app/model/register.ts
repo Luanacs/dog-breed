@@ -1,4 +1,4 @@
 export class Register {
 
-    "email": string;
+    public email: string;
  }
