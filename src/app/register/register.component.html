@@ -1,12 +1,36 @@
-<div class="form-group">
-    <label for="email">Email</label>
-    <input [(ngModel)]="register.email" class="form-control" type="text" name="email" id="email" placeholder="Seu email">
+<div class="container-fluid background-full">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6 d-flex justify-content-center">
+        <div>
+            <img src="../../assets/logoDogBreed.png" class="logo-edit" alt="logoDogBreed" />
+        </div>
+        
+        <div class="form-area">
+          <h1>Registre-se aqui</h1>
+          <div class="form-group mt-4">
+            <label for="email">Email</label>
+            <input
+              [(ngModel)]="register.email"
+              class="form-control"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Seu email"
+            />
+            <button
+              (click)="registrar()"
+              type="submit"
+              class="btn btn-registrar mt-4"
+            >
+              Registrar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col md-6 d-flex align-items-center">
+        <img src="../../assets/chiuaua.png" width="98%" alt="Chiuaua" />
+      </div>
+    </div>
+  </div>
 </div>
-<div class="d-flex justify-content-center pt-3">
-    <button
-      (click)="registrar()"
-      type="submit"
-      class="button-entrar font-button"
-    >
-      Registrar
-    </button>

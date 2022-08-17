@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { LocalStorageService } from '../local-storage.service';
 import { Register } from '../model/register';
 import { AuthService } from '../service/auth.service';
 
@@ -17,7 +18,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private auth: AuthService,
-    private router: Router
+    private router: Router,
+    private localStorageService: LocalStorageService
   ) { }
 
   ngOnInit()   {
@@ -27,14 +29,15 @@ export class RegisterComponent implements OnInit {
   registrar(){
     this.auth.register(this.register).subscribe({next: ((resp: Register) => {
       this.register=resp;
-      environment.token=this.register.token;
+      this.localStorageService.set(resp.email, resp.token)
+      console.log(this.localStorageService)
       this.router.navigate(['/list'])
     }),
-    error: erro => {
-      if(erro.status == 401){
-        alert('Usuário ou senha está incorreta.')
-      }
-    }
+    // error: erro => {
+    //   if(erro.status == 401){
+    //     alert('Não foi possível gerar um token.')
+    //   }
+    // }
   })
 }
 
