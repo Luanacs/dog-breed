@@ -16,7 +16,7 @@ export class LocalStorageService {
     return true;
   }
   return false; 
-  // depois tratar o erro implementando a opção de armazenamento de cookies
+  // depois tratar o erro implementando a opção de armazenamento cookies
 }
   get(key: string): any{
     if(this.storage ){
