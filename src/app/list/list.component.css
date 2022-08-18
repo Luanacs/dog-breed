@@ -1,0 +1,31 @@
+#bg-img {
+    background-image: url("../../assets/fundo-tela-edit.jpeg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin: 0;
+  }
+  .logo-edit{
+    width:300px;
+    margin-top: 20px;
+  }
+  .btn-breed{
+    border: 1px solid var(--color-yellow);
+    border-radius: 30px;
+    background-color: var(--color-yellow);
+    /* padding: 30px; */
+    width: 300px;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+  .text-breed{
+    color: var(--color-dark-blue);
+    font-weight: bolder;
+    font-size: large;
+  }
+  .img-pata{
+    width: 60px;
+    margin-right: 10px;
+  }
