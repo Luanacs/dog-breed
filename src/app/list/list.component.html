@@ -7,7 +7,11 @@
     />
   </div>
   <div class="row d-flex align-items-center justify-content-center">
-    <button (click)="getAllPets('chihuahua')" type="submit" class="btn-breed text-breed">
+    <button
+      (click)="getAllPets('chihuahua')"
+      type="submit"
+      class="btn-breed text-breed"
+    >
       <img
         src="../../assets/pata-laranja.png"
         class="img-pata"
@@ -54,11 +58,42 @@
       />
       Labrador
     </button>
-    <ul>
-      <li *ngFor="let breed of breedList?.list">
-        <img [src]="breed" alt="foto de cachorros">
-      </li>
-    </ul>
 
+    <div class="row">
+      <div class="col-md-3" *ngFor="let breed of breedList?.list">
+        <button class="btn" data-toggle="modal" data-target="#bigdog">
+          <img class="img-breeds" [src]="breed" alt="foto de cachorros" />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inicio modal -->
+<div
+  class="modal fade font-card"
+  id="bigdog"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="TituloModalCentralizado"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">+1 Doguinho</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Fechar"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="breed" alt="foto de cachorros" />
+      </div>
+    </div>
   </div>
 </div>
