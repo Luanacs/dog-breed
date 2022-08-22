@@ -8,12 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { ListComponent } from './list/list.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent, 
-    ListComponent
+    ListComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
