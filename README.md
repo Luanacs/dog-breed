@@ -9,3 +9,17 @@ Desafio criado em uma semana com intuito de construir um app com a temática "Do
 <h4 align="center">
     <a href="https://csdog-breed.netlify.app/list">Clique aqui para visualizar a aplicação do projeto</a>
 </h4>
+
+### 📝 Layout
+
+- Layout foi desenvolvido por mim, utilizando como ferramenta de marcação HTML e estilização CSS;
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### Frontend
+
+- Angular
+- Bootstrap
+- Typescript
