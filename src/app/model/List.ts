@@ -1,4 +1,5 @@
 export class List {
 
-    breed: string;
+    breed: any;
+    list: any
  }

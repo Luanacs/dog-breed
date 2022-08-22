@@ -12,7 +12,7 @@ import { ListService } from '../service/list.service';
 export class ListComponent implements OnInit {
 
   token: any;
-  breedList: List[]
+  breedList: any
 
   constructor(
     private router: Router,
@@ -22,19 +22,20 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.token = this.localStorageService.get('token');
+    this.listService.refreshToken()
     console.log(this.token);
     if (this.validToken(this.token)) {
       this.router.navigate(['/register']);
     }
+    this.getAllPets('chihuahua')
   }
   validToken(token: any) {
     return Object.keys(token).length === 0;
   }
 
-  getAllPets(breed?:string) {
-    this.listService.getAllPets().subscribe((petList: List[]) => {
-      this.listService.breedList = petList;
-      console.log(petList)
+  getAllPets(breed:string) {
+    this.listService.getAllPets(breed).subscribe((petList: any[]) => {
+      this.breedList = petList;
     })
   }
 

@@ -21,9 +21,17 @@ export class ListService {
       this.localStorageService.get('token'),
     ),
   }
+  refreshToken(){
+    this.token = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' }).set(
+        'Authorization',
+        this.localStorageService.get('token'),
+      ),
+    }
+  }
 
-  getAllPets(): Observable<List[]> {
+  getAllPets(breed: string): Observable<List[]> {
     console.log(this.token)
-    return this.http.get<List[]>('https://dogbreed-api.q9.com.br/list',this.token);
+    return this.http.get<List[]>(`https://dogbreed-api.q9.com.br/list?breed=${breed}`,this.token);
   }
 }

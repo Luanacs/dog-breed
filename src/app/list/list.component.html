@@ -1,33 +1,64 @@
 <div class="container-fluid" id="bg-img">
-    
-    <div class="row d-flex align-items-center justify-content-center">
-        <img src="../../assets/logoDogBreed.png" class="logo-edit" alt="Logo DogBreed">
-    </div>
   <div class="row d-flex align-items-center justify-content-center">
-    <button (click)="getAllPets()" type="submit" class="btn-breed text-breed">
-      <img src="../../assets/pata-laranja.png" class="img-pata" alt="Pata de cachorro laranja" />
+    <img
+      src="../../assets/logoDogBreed.png"
+      class="logo-edit"
+      alt="Logo DogBreed"
+    />
+  </div>
+  <div class="row d-flex align-items-center justify-content-center">
+    <button (click)="getAllPets('chihuahua')" type="submit" class="btn-breed text-breed">
+      <img
+        src="../../assets/pata-laranja.png"
+        class="img-pata"
+        alt="Pata de cachorro laranja"
+      />
       Chihuahua
-      
     </button>
 
-    <button (click)="getAllPets('husky')" type="submit" class="btn-breed text-breed">
-      <img src="../../assets/pata-laranja.png" class="img-pata" alt="Pata de cachorro laranja" /> Husk
+    <button
+      (click)="getAllPets('husky')"
+      type="submit"
+      class="btn-breed text-breed"
+    >
+      <img
+        src="../../assets/pata-laranja.png"
+        class="img-pata"
+        alt="Pata de cachorro laranja"
+      />
+      Husk
     </button>
 
-    <button (click)="getAllPets('pug')" type="submit" class="btn-breed text-breed">
-      <img src="../../assets/pata-laranja.png" class="img-pata" alt="Pata de cachorro laranja" /> Pug
+    <button
+      (click)="getAllPets('pug')"
+      type="submit"
+      class="btn-breed text-breed"
+    >
+      <img
+        src="../../assets/pata-laranja.png"
+        class="img-pata"
+        alt="Pata de cachorro laranja"
+      />
+      Pug
     </button>
 
-    <button (click)="getAllPets('labrador')" type="submit" class="btn-breed text-breed">
-      <img src="../../assets/pata-laranja.png" class="img-pata" alt="Pata de cachorro laranja" />
+    <button
+      (click)="getAllPets('labrador')"
+      type="submit"
+      class="btn-breed text-breed"
+    >
+      <img
+        src="../../assets/pata-laranja.png"
+        class="img-pata"
+        alt="Pata de cachorro laranja"
+      />
       Labrador
     </button>
     <ul>
-        <li *ngFor="let breed of breedList"> {{breed} </li>
-      </ul>
-   
+      <li *ngFor="let breed of breedList?.list">
+        <img [src]="breed" alt="foto de cachorros">
+      </li>
+    </ul>
+
   </div>
-
-  
-
 </div>
