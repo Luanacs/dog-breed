@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0, 0);
-    this.user.email;
+    // this.user.email;
   }
   registrar() {
     this.auth.register(this.user).subscribe({
