@@ -1,6 +1,6 @@
 #bg-img {
     background-image: url("../../assets/fundo-tela.jpeg");
-    min-height: 90vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -22,7 +22,7 @@
     height: 250px;
     /* border: 1px solid var(--color-yellow); */
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid var(--color-dark-blue);
+    border: 2px solid var(--color-yellow);
     border-radius: 12px;
     padding: 2rem;
     margin-top: 40px;
