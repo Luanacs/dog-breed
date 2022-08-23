@@ -26,13 +26,8 @@ export class RegisterComponent implements OnInit {
   registrar() {
     this.auth.register(this.user).subscribe({
       next: (resp: any) => {
+        this.localStorageService.set('token', resp.user.token);
         console.log(resp);
-        if (resp > 0) {
-          if (this.user.token == resp[0].token) {
-            delete resp[0].token;
-            this.localStorageService.set('token', resp[0].user.token);
-            alert('Email logado com sucesso');
-          } }
         this.router.navigate(['/list']);
       },
     });
