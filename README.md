@@ -12,7 +12,7 @@ Desafio criado em uma semana com intuito de construir um app com a temática "Do
 
 ### 📝 Layout
 
-- Layout foi desenvolvido por mim, utilizando como ferramenta de marcação HTML e estilização CSS;
+- Layout foi desenvolvido utilizando as linguagens de marcação HTML e estilização CSS;
 
 ### 🛠 Tecnologias
 
@@ -23,3 +23,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Angular
 - Bootstrap
 - Typescript
+- EsLint
