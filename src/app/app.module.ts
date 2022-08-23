@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { AngularMaterialImageOverlayModule, AngularMaterialImageOverlayComponent } from 'angular-material-image-overlay';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,8 +19,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    AngularMaterialImageOverlayModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

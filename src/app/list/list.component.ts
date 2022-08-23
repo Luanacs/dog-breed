@@ -1,6 +1,5 @@
 import { Component, OnInit, ɵdevModeEqual } from '@angular/core';
 import { Router } from '@angular/router';
-// import { AngularMaterialImageOverlayService } from 'angular-material-image-overlay';
 import { LocalStorageService } from '../local-storage.service';
 import { ListService } from '../service/list.service';
 

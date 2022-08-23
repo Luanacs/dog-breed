@@ -20,7 +20,6 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
-    "angular-material-image-overlay": "^1.0.2",
     "bootstrap": "^5.2.0",
     "jquery": "^3.6.0",
     "ngx-bootstrap": "^9.0.0",
