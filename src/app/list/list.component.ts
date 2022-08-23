@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵdevModeEqual } from '@angular/core';
 import { Router } from '@angular/router';
 // import { AngularMaterialImageOverlayService } from 'angular-material-image-overlay';
 import { LocalStorageService } from '../local-storage.service';
@@ -15,11 +15,11 @@ export class ListComponent implements OnInit {
   token: any;
   breedList: any
 
+
   constructor(
     private router: Router,
     private localStorageService: LocalStorageService,
     private listService: ListService,
-    // private imageOverlayService: AngularMaterialImageOverlayService
   ) {}
 
   ngOnInit() {
@@ -40,7 +40,5 @@ export class ListComponent implements OnInit {
       this.breedList = petList;
     })
   }
-  // openImageOverlay(breedList: string): void {
-  //   this.imageOverlayService.open(this.breedList, breedList);
-  // }
+
 }
