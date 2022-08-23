@@ -1,27 +1,25 @@
-# DogBreed
+<h1 align="center">Dog Breed</h1>
+<p align="center">
+  <img src="https://github.com/Luanacs/dog-breed/blob/master/src/assets/logoDogBreed.png" />
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+## Descrição do Projeto :dog::point_down:
+Desafio criado em uma semana com intuito de construir um app com a temática "Dog Breed" para capturar dados de uma api de raças de cachorros. O site contém uma página para cadastro do usuário solicitanto como dado o e-mail, que irá gerar um token(este ficará armazenado na LocalStorage). Após a página de registro, o usuário será encaminhado à página inicial onde verá um menu de 4 opções de raças e ao apertar o botão será gerado uma lista de fotos relacionado à raça clicada. Ao clicar em uma das fotos, esta será ampliada para melhor visualização.
 
-## Development server
+<h4 align="center">
+    <a href="https://csdog-breed.netlify.app/list">Clique aqui para visualizar a aplicação do projeto</a>
+</h4>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 📝 Layout
 
-## Code scaffolding
+- Layout foi desenvolvido por mim, utilizando como ferramenta de marcação HTML e estilização CSS;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 🛠 Tecnologias
 
-## Build
+As seguintes ferramentas foram usadas na construção do projeto:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Frontend
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular
+- Bootstrap
+- Typescript
