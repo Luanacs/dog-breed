@@ -9,6 +9,8 @@ import { RegisterComponent } from './register/register.component';
 import { ListComponent } from './list/list.component';
 import { FooterComponent } from './footer/footer.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

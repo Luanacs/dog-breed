@@ -63,16 +63,25 @@
       />
       Labrador
     </button>
-
-    <div class="row">
-      <div class="col-md-3" *ngFor="let breed of breedList?.list">
     
-          <img class="img-breeds" [src]="breed" alt="foto de cachorros"  onClick="window.open(this.src)"
-          role="button"
-          tabIndex="0"/>
-  
+
+    <div *ngIf="breedList | async; else loading">
+      <div class="row">
+        <div class="col-md-3" *ngFor="let breed of breedList?.list">
+      
+            <img class="img-breeds" [src]="breed" alt="foto de cachorros"  onClick="window.open(this.src)"
+            role="button"
+            tabIndex="0"/>
+    
+        </div>
       </div>
     </div>
+
+    <ng-template #loading>
+     carregando
+    </ng-template>
+
+    
   </div>
 </div>
 <app-footer></app-footer>
