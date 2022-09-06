@@ -65,7 +65,7 @@
     </button>
     
 
-    <div *ngIf="breedList | async; else loading">
+ 
       <div class="row">
         <div class="col-md-3" *ngFor="let breed of breedList?.list">
       
@@ -75,11 +75,9 @@
     
         </div>
       </div>
-    </div>
 
-    <ng-template #loading>
-     carregando
-    </ng-template>
+
+
 
     
   </div>
